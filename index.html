@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Verkefni 1</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<script src="classes.js"></script>
+	</head>
+	<body>
+		<div id="Universe">
+			<div id="Header" class="center-block centralizer">
+				<h1>DrawTech Industries</h1>
+			</div>
+			<div id="Tools" class="center-block centralizer">
+				<button id="Pen" class="btn btn-primary">Pen</button>
+				<button id="Line" class="btn btn-primary">Line</button>
+				<button id="Rectangle" class="btn btn-primary">Rectangle</button>
+				<button id="Circle" class="btn btn-primary">Circle</button>
+				<button id="Text" class="btn btn-primary">Text</button>
+				<button id="Select" class="btn btn-primary">Select</button>
+
+				<label for="InputText">Input text:</label>
+				<input id="InputText" type="text" class="spacer" />
+			</div>
+			<div id="Threeboxes">
+				<div id="right-Sidebar" class="sidebar pull-right">
+					<label for="SaveName">Save name:</label>
+					<input id="SaveName" class="sidebar" type="text" />
+
+					<label for="List">Select a image to load:</label>
+					<select id="List" class="form-control" size="10"></select>
+
+					<button id="Save" class="btn btn-success spacer">Save</button>
+					<button id="Load" class="btn btn-success spacer">Load</button>
+				</div>
+				<div id="Right-Sidebar" class="siderbar pull-left">
+					<label for="Font">Font:</label>
+					<select id="Font" class="form-control">
+						<option value="Arial">Arial</option>
+						<option value="Calibri">Calibri</option>
+						<option value="Times New Roman">Times New Roman</option>
+						<option value="Comic Sans MS">Comic Sans MS</option>
+					</select>
+
+					<label for="Size">Font size:</label>
+					<input id="Size" class="form-control" type="number" min="8" max="24" value="8" />
+
+					<label for="Color">Color:</label>
+					<input id="Color" class="form-control" type="color" />
+
+					<label for="Width">Line Width:</label>
+					<input id="Width" type="number" class="form-control" min="1" max="12" value="1" />
+				</div>
+				<div id="Board" class="center-block centralizer">
+					<canvas id="Whiteboard" width="396px" height="396px">
+						<p>Your browser doesn't support this functionality.</p>
+					</canvas>
+				</div>
+			</div>
+			<div id="Footer" class="center-block centralizer">
+				<button id="Undo" class="btn btn-darkorange">Undo action</button>
+				<button id="Redo" class="btn btn-darkorange">Redo action</button>
+				<button id="Clr" class="btn btn-danger pull-right">Clear board</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+#Universe {
+	margin: 0px auto 0px auto;
+	width: 800px;
+}
+
+#InputText {
+	width: 325px;
+}
+
+.spacer {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#Whiteboard {
+	border: 2px outset #D3D3D3;
+}
+
+#Threeboxes {
+	width: 800px;
+}
+
+.centralizer {
+	width: 400px;
+}
+
+.sidebar {
+	width: 175px;
+	display: inline-block;
+}
+
+.btn-darkorange {
+	background-color: #FF6600;
+	color: #FFFFFF;
+}
